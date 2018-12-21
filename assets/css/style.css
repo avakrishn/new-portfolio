@@ -1,0 +1,45 @@
+body, html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+    margin: 0;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: #5f5e5e;
+    font-weight: bolder;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 200%;
+    color: #5f5e5e;
+    margin-left: 0px;
+    
+}
+
+.middle{
+    height:1.2px;
+    background-color: rgb(168, 59, 182);
+}
+
+footer {
+    background-color: #222222;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.85;
+}
+
+.footer-text{
+    font-size: 12px;
+    color: #8772b5;
+}
+
+.up-arrow{
+    color: #a75cd3;
+    font-size: 19px;
+}
