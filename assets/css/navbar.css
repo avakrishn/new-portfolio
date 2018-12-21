@@ -1,0 +1,29 @@
+.navbar {
+    opacity: 0.87;   
+}
+
+.navbar-brand{
+    font-size: 28px;
+}
+
+li{
+    font-size: 16px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #bb68eb;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.nav.navbar-nav li.active a {
+    background-color:#a75cd3;
+}
+
+.icon-bar{
+    background-color:#bb68eb;
+}
+
+.projects:hover{
+    cursor: pointer;
+}
