@@ -1,0 +1,289 @@
+
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #000201;
+}
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+.navbar {
+    opacity: 0.87; 
+}
+.navbar-brand{
+    font-size: 28px;
+}
+
+li{
+    font-size: 16px;
+}
+.navbar-inverse .navbar-brand {
+    color: #bb68eb;
+    letter-spacing: 3px;
+}
+
+.nav.navbar-nav li.active a {
+    background-color:#a75cd3;
+}
+
+.projects:hover{
+    cursor: pointer;
+}
+
+h2{
+    font-size: 30px;
+    color: #5f5e5e;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 200%;
+    color: #5f5e5e;
+}
+.middle{
+    height:1.2px;
+    background-color: rgb(168, 59, 182);
+}
+
+footer {
+    background-color: #222222;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.85;
+}
+.footer-text{
+    font-size: 12px;
+    color: #8772b5;
+    
+}
+.up-arrow{
+    color: #a75cd3;
+    font-size: 19px;
+}
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+    opacity: 0.94;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #000201;
+    min-height: 100%;
+    z-index: 20;
+}
+.bgimg-1, .bgimg-5 {
+    background-image: url("../images/blue-purple-left.jpg");
+    background-position:left;
+}
+.bgimg-2, .bgimg-6  {
+    background-image: url("../images/yellow-purple-left.jpg");
+    background-position:left;
+}
+.bgimg-3 {
+    background-image: url("../images/yellow-purple-right.jpg"); 
+    background-position:right;
+}
+.bgimg-4 {
+    background-image: url("../images/blue-purple-right.jpg");
+    background-position:right;
+}
+.bgimg-7 {
+    background-color: #fbf9fc;
+    min-height: 86%;
+
+}
+h1{
+    margin-top: 25%;
+    font-size: 10.5vw;
+    color: #00cba7;
+} 
+
+#hangmanImage, #triviaImage {
+    width: 100%;
+    box-shadow: 0 0 0.3vw #708090;
+}
+#rutgersImage, #rpgImage, #scissorsImage{
+    width: 100%;
+    box-shadow: 0 0 0.5vw #f5f5f5;
+}
+#hangman, #rpg, #trivia, #rutgers, #scissors{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+#hangmanText, #rpgText, #triviaText, #rutgersText, #scissorsText{
+    position: absolute;
+    bottom: 4%;
+    width: 100%;
+    text-align: center;
+    background-color: #a75cd3;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 130%;   
+}
+#hangmanText{
+    background-color: #009e95;
+}
+#triviaText{
+    background-color: #e86b00;
+}
+
+#hangman:hover, #rpg:hover, #trivia:hover, #rutgers:hover, #scissors:hover{
+    transform: scale(1.1);
+}
+
+.skill{
+    font-size: 20px;
+}
+
+.scroll{
+    display: none;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.7;
+    font-size: 29px;
+    z-index: initial;
+
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1023px) {
+    .bgimg-1{
+        background-attachment: scroll;
+        min-height: 0%;
+        background-image: none;
+        padding: 0;
+    }
+    .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7  {
+        background-attachment: scroll;
+        min-height: 0%;
+        background-image: none;
+        padding: 0;
+    }
+    .small-device-c-r{
+        margin-right: 0% !important;
+    }
+    .small-device-c-l{
+        margin-left: 0% !important;
+    }
+
+    .small-device-row{
+        margin-top: 8% !important;
+        margin-bottom: 8% !important;
+    }
+
+    h1{
+        color: #a75cd3;
+        padding-right: 0px;
+    }
+
+}
+
+@media only screen and (min-device-width: 1023px) and (max-width: 991px){
+    .small-device-c-r{
+        margin-right: 0% !important;
+    }
+    .small-device-c-l{
+        margin-left: 0% !important;
+    }
+    
+    #rpg, #trivia, #rutgers{
+        width: 40%;
+        float: right;
+    }
+    #hangman, #scissors{
+        width: 40%;
+        float: left;   
+    }
+    #triviaImage, #rutgersImage, #rpgImage{
+        width: 100%;
+        float: right;
+    }
+
+    #hangmanImage,#scissorsImage{
+        width: 100%;
+        float: left;
+    }
+
+
+    #hangmanText, #rpgText, #triviaText, #rutgersText, #scissorsText{
+        width: 100%;
+        clear: both;
+        font-size: 100%;
+    }
+
+}
+
+@media screen and (min-device-width: 1024px){
+    .scroll{
+        display: block;
+    }
+    h1{
+        float: right;
+        margin-right: 7%;
+    }
+    .small-device-c-l{
+        margin-left: 3%;
+    }
+    .small-device-c-r{
+        margin-right: 4%;
+    } 
+    
+    .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7{
+        padding: 0;
+    }
+} 
+
+
+@media screen and (max-width: 1225px){
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+        background-size: 54.5% 100%;
+    }
+}
+@media screen and (min-width: 2000px){
+    #hangmanText, #rpgText, #triviaText, #rutgersText, #scissorsText{
+        font-size: 300%;
+    }
+    a, .footer-text{
+        font-size: 200%;
+    }
+    strong{
+        font-size: 200%;
+    }
+
+    .navbar-brand{
+        margin-top: 20px;
+    }
+
+    .nav.navbar-nav li.active a {
+        padding: 30px;
+    }
+    .about, .projects, .contact{
+        margin: 15px;
+        margin-bottom: 0px;
+    }
+
+    .bgimg-7{
+        font-size: 20px;
+    }
+
+    .skill{
+        font-size: 40px;
+    }
+
+    .skill-set{
+        width: 100%;
+    }
+
+    .glyphicon{
+        font-size: 30px;
+    }
+
+
+} 
+
