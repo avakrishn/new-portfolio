@@ -7,7 +7,7 @@
 }
 
 li{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .navbar-inverse .navbar-brand {
@@ -20,10 +20,30 @@ li{
     background-color:#a75cd3;
 }
 
+.nav.navbar-nav li.active a:hover {
+    background-color:#a75cd3;
+}
+
 .icon-bar{
     background-color:#bb68eb;
 }
 
 .projects:hover{
     cursor: pointer;
+}
+
+#nav-about:hover, #nav-portfolio:hover{
+    color: #bb68eb;
+
+} 
+
+#social-icon-github, #social-icon-linkedin, #social-icon-email{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#social-icon-github:hover, #social-icon-linkedin:hover, #social-icon-email:hover{
+    text-decoration: none;
+    color: #bb68eb;
+
 }
