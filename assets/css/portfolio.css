@@ -88,6 +88,42 @@ h1{
 
 }
 
+.bg-transparent{
+    background-color: transparent;
+}
+
+.i-color{
+    color: #00cba7;
+}
+
+.margin-project{
+    margin: 25% 0 37% 0;
+}
+
+.skill-div{
+    display: inline-block; margin: 3% 3%;
+}
+
+#html-icon{
+    border-color:#EA6628; 
+    color: #EA6628; 
+    background-color: transparent; 
+    box-shadow: 0 0 5px #333;
+}
+
+#css-icon{
+    border-color:#2e96e6; 
+    color: #2e96e6; 
+    background-color: transparent; 
+    box-shadow: 0 0 5px #333;
+}
+
+#js-icon{
+    border-color:#eedf49; 
+    color: #eedf49; 
+    background-color: transparent; 
+    box-shadow: 0 0 4px #333;
+}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1023px) {
