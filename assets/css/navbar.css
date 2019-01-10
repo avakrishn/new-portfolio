@@ -7,21 +7,33 @@
 }
 
 li{
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .navbar-inverse .navbar-brand {
     color: #bb68eb;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-weight: bold;
 }
 
-.nav.navbar-nav li.active a {
-    background-color:#a75cd3;
+#my-name:hover{
+    color: grey;
+    color: #bb68eb;
 }
 
+.nav.navbar-nav li.active a {
+    /* background-color:#a75cd3; */
+    background-color: transparent;
+    color: #bb68eb;
+    /* border-bottom: 2px #bb68eb solid; */
+    /* text-decoration: underline; */
+}
+
+
+
 .nav.navbar-nav li.active a:hover {
-    background-color:#a75cd3;
+    background-color: transparent;
+    color: #bb68eb;
 }
 
 .icon-bar{
@@ -32,9 +44,10 @@ li{
     cursor: pointer;
 }
 
+
 #nav-about:hover, #nav-portfolio:hover{
     color: #bb68eb;
-
+    background-color: transparent;
 } 
 
 #social-icon-github, #social-icon-linkedin, #social-icon-email{
@@ -46,4 +59,57 @@ li{
     text-decoration: none;
     color: #bb68eb;
 
+}
+
+.navbar-fade-in{
+    -webkit-animation: fadeinNav 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinNav 2s; /* Firefox < 16 */
+        -ms-animation: fadeinNav 2s; /* Internet Explorer */
+         -o-animation: fadeinNav 2s; /* Opera < 12.1 */
+            animation: fadeinNav 2s;
+
+}
+
+@keyframes fadeinNav {
+    0% {opacity: 0; }
+    25%  {opacity: 0.235;}
+    50%  {opacity: 0.47;}
+    75%  {opacity: 0.705;}
+    100% {opacity: 0.87;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinNav {
+    0% {opacity: 0; }
+    25%  {opacity: 0.235;}
+    50%  {opacity: 0.47;}
+    75%  {opacity: 0.705;}
+    100% {opacity: 0.87;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinNav {
+    0% {opacity: 0; }
+    25%  {opacity: 0.235;}
+    50%  {opacity: 0.47;}
+    75%  {opacity: 0.705;}
+    100% {opacity: 0.87;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinNav {
+    0% {opacity: 0; }
+    25%  {opacity: 0.235;}
+    50%  {opacity: 0.47;}
+    75%  {opacity: 0.705;}
+    100% {opacity: 0.87;}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinNav {
+    0% {opacity: 0; }
+    25%  {opacity: 0.235;}
+    50%  {opacity: 0.47;}
+    75%  {opacity: 0.705;}
+    100% {opacity: 0.87;}
 }
