@@ -7,7 +7,7 @@
 }
 
 li{
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .navbar-inverse .navbar-brand {
@@ -16,12 +16,24 @@ li{
     font-weight: bold;
 }
 
-.nav.navbar-nav li.active a {
-    background-color:#a75cd3;
+#my-name:hover{
+    color: grey;
+    color: #bb68eb;
 }
 
+.nav.navbar-nav li.active a {
+    /* background-color:#a75cd3; */
+    background-color: transparent;
+    color: #bb68eb;
+    /* border-bottom: 2px #bb68eb solid; */
+    /* text-decoration: underline; */
+}
+
+
+
 .nav.navbar-nav li.active a:hover {
-    background-color:#a75cd3;
+    background-color: transparent;
+    color: #bb68eb;
 }
 
 .icon-bar{
@@ -32,9 +44,10 @@ li{
     cursor: pointer;
 }
 
+
 #nav-about:hover, #nav-portfolio:hover{
     color: #bb68eb;
-
+    background-color: transparent;
 } 
 
 #social-icon-github, #social-icon-linkedin, #social-icon-email{

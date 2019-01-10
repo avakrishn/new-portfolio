@@ -7,13 +7,23 @@ body{
 }
 
 .navbar-fade-in{
-    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s; /* Firefox < 16 */
-        -ms-animation: fadein 3s; /* Internet Explorer */
-         -o-animation: fadein 3s; /* Opera < 12.1 */
-            animation: fadein 3s;
+    -webkit-animation: fadeinNav 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinNav 3s; /* Firefox < 16 */
+        -ms-animation: fadeinNav 3s; /* Internet Explorer */
+         -o-animation: fadeinNav 3s; /* Opera < 12.1 */
+            animation: fadeinNav 3s;
 
 }
+
+#nav-portfolio:hover{
+    margin-bottom: -2px;
+    border-bottom: 2px #bb68eb solid;
+}
+
+#nav-about:hover{
+    cursor: default;
+}
+
 
 .row.content {
     margin-top: 80px;
@@ -59,48 +69,48 @@ body{
 
 }
 
-@keyframes fadeinX {
-    0% {opacity: 0;}
+@keyframes fadeinNav {
+    0% {opacity: 0; }
     25%  {opacity: 0.235;}
     50%  {opacity: 0.47;}
     75%  {opacity: 0.705;}
-    100% {opacity: 0.94;}
+    100% {opacity: 0.87;}
 }
 
 /* Firefox < 16 */
-@-moz-keyframes fadeinX {
+@-moz-keyframes fadeinNav {
     0% {opacity: 0; }
     25%  {opacity: 0.235;}
     50%  {opacity: 0.47;}
     75%  {opacity: 0.705;}
-    100% {opacity: 0.94;}
+    100% {opacity: 0.87;}
 }
 
 /* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadeinX {
+@-webkit-keyframes fadeinNav {
     0% {opacity: 0; }
     25%  {opacity: 0.235;}
     50%  {opacity: 0.47;}
     75%  {opacity: 0.705;}
-    100% {opacity: 0.94;}
+    100% {opacity: 0.87;}
 }
 
 /* Internet Explorer */
-@-ms-keyframes fadeinX {
+@-ms-keyframes fadeinNav {
     0% {opacity: 0; }
     25%  {opacity: 0.235;}
     50%  {opacity: 0.47;}
     75%  {opacity: 0.705;}
-    100% {opacity: 0.94;}
+    100% {opacity: 0.87;}
 }
 
 /* Opera < 12.1 */
-@-o-keyframes fadeinX {
+@-o-keyframes fadeinNav {
     0% {opacity: 0; }
     25%  {opacity: 0.235;}
     50%  {opacity: 0.47;}
     75%  {opacity: 0.705;}
-    100% {opacity: 0.94;}
+    100% {opacity: 0.87;}
 }
 
 @keyframes fadein {
