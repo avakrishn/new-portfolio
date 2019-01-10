@@ -69,13 +69,19 @@ App = {
 
 
 window.onload = function() {
-    setTimeout(App.typeWriter, 2000);
+    setTimeout(App.typeWriter, 1500);
     window.onscroll = function(){
         document.querySelector('.scroll').style.visibility = "hidden";
         document.querySelector('#navbar-index').style.visibility = "visible";
         document.querySelector('#navbar-index').classList.add("navbar-fade-in");
         // $('.scroll').hide();
         // $('#navbar-index').show();
-    };  
+    }; 
+    
+    window.onclick = function(){
+        // App.speed = 30;
+        document.querySelector('#navbar-index').style.visibility = "visible";
+        document.querySelector('#navbar-index').classList.add("navbar-fade-in");
+    }
 
 };
