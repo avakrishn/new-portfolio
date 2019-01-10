@@ -78,10 +78,10 @@ window.onload = function() {
         // $('#navbar-index').show();
     }; 
     
-    window.onclick = function(){
-        // App.speed = 30;
-        document.querySelector('#navbar-index').style.visibility = "visible";
-        document.querySelector('#navbar-index').classList.add("navbar-fade-in");
-    }
+    // window.onclick = function(){
+    //     // App.speed = 30;
+    //     document.querySelector('#navbar-index').style.visibility = "visible";
+    //     document.querySelector('#navbar-index').classList.add("navbar-fade-in");
+    // }
 
 };
