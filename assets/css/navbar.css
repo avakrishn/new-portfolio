@@ -16,9 +16,11 @@ li{
     font-weight: bold;
 }
 
+
 #my-name:hover{
     color: grey;
     color: #bb68eb;
+    cursor: default;
 }
 
 .nav.navbar-nav li.active a {
@@ -58,6 +60,8 @@ li{
 #social-icon-github:hover, #social-icon-linkedin:hover, #social-icon-email:hover{
     text-decoration: none;
     color: #bb68eb;
+    margin-bottom: -2px;
+    border-bottom: 2px #bb68eb solid;
 
 }
 
