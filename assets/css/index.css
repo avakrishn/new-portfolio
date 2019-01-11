@@ -24,9 +24,84 @@ body{
 
 #mainImage{
     width: 160px;
-    height: auto; 
+    height: auto;
     border-radius: 9px;
     margin-bottom: 15px;
+}
+
+#myImage{
+    display: flex;
+    align-self: baseline;
+    width: 170px;
+    height: auto; 
+    border-radius: 9px;
+    /* margin-bottom: 15px; */
+    margin-left: 11%;
+}
+
+.about-me{
+    padding-top: 14%;
+}
+
+#divider{
+    margin-left: 7%;
+    width: 90%;
+    margin-bottom: 20px;
+    /* border-bottom: 2px solid rgb(155, 47, 7); */
+    /* color: rgb(221, 93, 46); */
+    border-bottom: 2px solid rgb(161, 74, 34);
+    color: rgb(161, 74, 34);
+    /* color: rgb(146, 64, 27); */
+    font-size: 30px;
+    text-align: center;
+}
+
+#socials{
+    margin-left: 7%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 35px;
+}
+
+#about-github, #about-linkedin, #about-email, #about-overflow, #about-repl{
+    text-decoration: none;
+    margin: 30px 22px;
+}
+
+#about-overflow{
+    color: #f48024;
+}
+
+#about-email{
+    color: green;
+}
+
+#about-linkedin{
+    color: #0077b5;
+}
+
+#about-github{
+    color: #7e5ead;
+}
+
+#about-repl{
+    width: 37px;
+    height: 37px;
+    opacity: 0.9;
+}
+
+#about-github:hover, #about-linkedin:hover, #about-email:hover, #about-overflow:hover, #about-repl:hover{
+    cursor:pointer;
+    opacity: 0.75;
+}
+
+#repl-div{
+    width: fit-content;
+    height: fit-content;
+    display:inline-block; 
+    line-height:0;
 }
 
 .image-text{
@@ -53,6 +128,18 @@ body{
     min-height: 100%;
     z-index: 20;
 
+}
+
+#about-me{
+    background-image: url("../images/yellow-purple-right.jpg");
+    background-position:right;
+    /* opacity: 0.94; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #000201;
+    min-height: 115%;
+    z-index: 20;
 }
 
 
