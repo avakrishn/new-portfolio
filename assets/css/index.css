@@ -24,9 +24,84 @@ body{
 
 #mainImage{
     width: 160px;
-    height: auto; 
+    height: auto;
     border-radius: 9px;
     margin-bottom: 15px;
+}
+
+#myImage{
+    display: flex;
+    align-self: baseline;
+    width: 170px;
+    height: auto; 
+    border-radius: 9px;
+    /* margin-bottom: 15px; */
+    margin-left: 11%;
+}
+
+.about-me{
+    padding-top: 5%;
+}
+
+#divider{
+    margin-left: 7%;
+    width: 90%;
+    margin-bottom: 20px;
+    /* border-bottom: 2px solid rgb(155, 47, 7); */
+    /* color: rgb(221, 93, 46); */
+    border-bottom: 2px solid rgb(161, 74, 34);
+    color: rgb(161, 74, 34);
+    /* color: rgb(146, 64, 27); */
+    font-size: 30px;
+    text-align: center;
+}
+
+#socials{
+    margin-left: 7%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 35px;
+}
+
+#about-github, #about-linkedin, #about-email, #about-overflow, #about-repl{
+    text-decoration: none;
+    margin: 30px 22px;
+}
+
+#about-overflow{
+    color: #f48024;
+}
+
+#about-email{
+    color: green;
+}
+
+#about-linkedin{
+    color: #0077b5;
+}
+
+#about-github{
+    color: #7e5ead;
+}
+
+#about-repl{
+    width: 37px;
+    height: 37px;
+    opacity: 0.9;
+}
+
+#about-github:hover, #about-linkedin:hover, #about-email:hover, #about-overflow:hover, #about-repl:hover{
+    cursor:pointer;
+    opacity: 0.75;
+}
+
+#repl-div{
+    width: fit-content;
+    height: fit-content;
+    display:inline-block; 
+    line-height:0;
 }
 
 .image-text{
@@ -53,6 +128,18 @@ body{
     min-height: 100%;
     z-index: 20;
 
+}
+
+#about-me{
+    background-image: url("../images/yellow-purple-right.jpg");
+    background-position:right;
+    /* opacity: 0.94; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #000201;
+    min-height: 115%;
+    z-index: 20;
 }
 
 
@@ -86,6 +173,69 @@ body{
 .float-left{
     float: right;
 }
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    display: -webkit-flex; /* Safari */    
+}
+
+.flex-row-wrap{
+    display: flex;
+    flex-direction: row;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    flex-wrap: wrap;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-text{
+    /* color: rgb(161, 74, 34); */
+    color: rgb(128, 128, 128);
+    margin-left: 20px;
+    font-size: 19px;
+}
+
+.about-me-text-under-photo{
+    color: rgb(128, 128, 128);
+    font-size: 19px;
+    margin-left: 11%;
+}
+
+#created-divider{
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(168, 59, 182);
+    color: rgb(168, 59, 182);
+    font-size: 27px;
+    text-align: center;
+}
+
+.created-images-div{
+    justify-content: center;
+}
+
+.created-images{
+    width: 350px;
+    height: 200px;
+    object-fit: contain;
+    margin: 0 10px 0 10px;
+}
+
+.font-17{
+    font-size: 17px;
+}
+
+.font-23{
+    font-size: 23px;
+}
+#mainInfo{
+    min-height: 115%;
+}
+
 
 
 @media screen and (max-width: 767px) {
