@@ -1,5 +1,11 @@
 
 body{
+    /* background-color: #fbf9fc; */
+    background-color: #000201;
+    opacity: 0.94;
+}
+
+.light-background{
     background-color: #fbf9fc;
 }
 #navbar-index{
@@ -140,7 +146,7 @@ body{
 #intro-image{
     background-image: url("../images/blue-purple-right.jpg");
     background-position:right;
-    /* opacity: 0.94; */
+    opacity: 0.94;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: contain;
