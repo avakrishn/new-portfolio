@@ -72,7 +72,7 @@ App = {
 
 
 window.onload = function() {
-    setTimeout(App.typeWriter, 1500);
+    setTimeout(App.typeWriter, 1100);
     // console.log(window.scrollY > 0);
     
     window.onscroll = function(){
