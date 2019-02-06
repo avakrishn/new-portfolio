@@ -51,12 +51,15 @@ App = {
             App.h++;
             setTimeout(App.typeWriter, App.speed);
         }else{
-            setTimeout(function(){
-                document.querySelector('.bounce').style.visibility = 'visible';
-                // document.querySelector('#navbar-index').classList.add("navbar-fade-in");
-                // document.querySelector('#navbar-index').style.visibility = "visible";
-                
-            }, 1000);
+            //only show the bounce/scroll down arrow if user has not scrolled down the page yet
+            if(window.scrollY === 0){
+                setTimeout(function(){
+                    document.querySelector('.bounce').style.visibility = 'visible';
+                    // document.querySelector('#navbar-index').classList.add("navbar-fade-in");
+                    // document.querySelector('#navbar-index').style.visibility = "visible";
+                }, 1000);
+            }
+            
             
         }
 
@@ -69,9 +72,11 @@ App = {
 
 
 window.onload = function() {
-    setTimeout(App.typeWriter, 1500);
+    setTimeout(App.typeWriter, 1100);
+    // console.log(window.scrollY > 0);
+    
     window.onscroll = function(){
-        document.querySelector('.scroll').style.visibility = "hidden";
+        document.querySelector('.bounce').style.visibility = "hidden";
         document.querySelector('#navbar-index').style.visibility = "visible";
         document.querySelector('#navbar-index').classList.add("navbar-fade-in");
         // $('.scroll').hide();
@@ -85,3 +90,8 @@ window.onload = function() {
     // }
 
 };
+
+// if on page refresh/ load the page will be loaded at the top of the page
+// window.onbeforeunload = function () {
+//     window.scrollTo(0, 0);
+//   }
